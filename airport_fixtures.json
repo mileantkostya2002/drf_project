@@ -1,0 +1,309 @@
+[
+  {
+    "model": "airport_api.country",
+    "pk": 1,
+    "fields": {
+      "name": "USA"
+    }
+  },
+  {
+    "model": "airport_api.country",
+    "pk": 2,
+    "fields": {
+      "name": "United Kingdom"
+    }
+  },
+  {
+    "model": "airport_api.country",
+    "pk": 3,
+    "fields": {
+      "name": "Germany"
+    }
+  },
+  {
+    "model": "airport_api.country",
+    "pk": 4,
+    "fields": {
+      "name": "France"
+    }
+  },
+  {
+    "model": "airport_api.city",
+    "pk": 1,
+    "fields": {
+      "name": "New York",
+      "country": 1
+    }
+  },
+  {
+    "model": "airport_api.city",
+    "pk": 2,
+    "fields": {
+      "name": "London",
+      "country": 2
+    }
+  },
+  {
+    "model": "airport_api.city",
+    "pk": 3,
+    "fields": {
+      "name": "Berlin",
+      "country": 3
+    }
+  },
+  {
+    "model": "airport_api.city",
+    "pk": 4,
+    "fields": {
+      "name": "Paris",
+      "country": 4
+    }
+  },
+  {
+    "model": "airport_api.airport",
+    "pk": 1,
+    "fields": {
+      "name": "John F. Kennedy International Airport",
+      "closest_big_city": "1"
+    }
+  },
+  {
+    "model": "airport_api.airport",
+    "pk": 2,
+    "fields": {
+      "name": "Heathrow Airport",
+      "closest_big_city": 2
+    }
+  },
+  {
+    "model": "airport_api.airport",
+    "pk": 3,
+    "fields": {
+      "name": "Berlin Brandenburg Airport",
+      "closest_big_city": 3
+    }
+  },
+  {
+    "model": "airport_api.airport",
+    "pk": 4,
+    "fields": {
+      "name": "Charles de Gaulle Airport",
+      "closest_big_city": 4
+    }
+  },
+  {
+    "model": "airport_api.route",
+    "pk": 1,
+    "fields": {
+      "source": 1,
+      "destination": 2,
+      "distance": 5571
+    }
+  },
+  {
+    "model": "airport_api.route",
+    "pk": 2,
+    "fields": {
+      "source": 2,
+      "destination": 3,
+      "distance": 932
+    }
+  },
+  {
+    "model": "airport_api.route",
+    "pk": 3,
+    "fields": {
+      "source": 3,
+      "destination": 4,
+      "distance": 878
+    }
+  },
+  {
+    "model": "airport_api.route",
+    "pk": 4,
+    "fields": {
+      "source": 1,
+      "destination": 4,
+      "distance": 5837
+    }
+  },
+  {
+    "model": "airport_api.airplanetype",
+    "pk": 1,
+    "fields": {
+      "name": "Boeing 737"
+    }
+  },
+  {
+    "model": "airport_api.airplanetype",
+    "pk": 2,
+    "fields": {
+      "name": "Airbus A320"
+    }
+  },
+  {
+    "model": "airport_api.airplanetype",
+    "pk": 3,
+    "fields": {
+      "name": "Boeing 777"
+    }
+  },
+  {
+    "model": "airport_api.airplane",
+    "pk": 1,
+    "fields": {
+      "name": "Spirit of Seattle",
+      "rows": 30,
+      "seats_in_row": 6,
+      "airplane_type": 1
+    }
+  },
+  {
+    "model": "airport_api.airplane",
+    "pk": 2,
+    "fields": {
+      "name": "European Express",
+      "rows": 25,
+      "seats_in_row": 6,
+      "airplane_type": 2
+    }
+  },
+  {
+    "model": "airport_api.airplane",
+    "pk": 3,
+    "fields": {
+      "name": "Atlantic Voyager",
+      "rows": 40,
+      "seats_in_row": 9,
+      "airplane_type": 3
+    }
+  },
+  {
+    "model": "airport_api.flight",
+    "pk": 1,
+    "fields": {
+      "route": 1,
+      "airplane": 1,
+      "departure_time": "2025-10-01T10:00:00Z",
+      "arrival_time": "2025-10-01T18:00:00Z"
+    }
+  },
+  {
+    "model": "airport_api.flight",
+    "pk": 2,
+    "fields": {
+      "route": 2,
+      "airplane": 2,
+      "departure_time": "2025-10-02T14:00:00Z",
+      "arrival_time": "2025-10-02T16:30:00Z"
+    }
+  },
+  {
+    "model": "airport_api.flight",
+    "pk": 3,
+    "fields": {
+      "route": 3,
+      "airplane": 2,
+      "departure_time": "2025-10-03T09:00:00Z",
+      "arrival_time": "2025-10-03T11:00:00Z"
+    }
+  },
+  {
+    "model": "airport_api.flight",
+    "pk": 4,
+    "fields": {
+      "route": 4,
+      "airplane": 3,
+      "departure_time": "2025-10-04T08:00:00Z",
+      "arrival_time": "2025-10-04T16:30:00Z"
+    }
+  },
+  {
+    "model": "airport_api.crew",
+    "pk": 1,
+    "fields": {
+      "first_name": "John",
+      "last_name": "Smith"
+    }
+  },
+  {
+    "model": "airport_api.crew",
+    "pk": 2,
+    "fields": {
+      "first_name": "Emma",
+      "last_name": "Johnson"
+    }
+  },
+  {
+    "model": "airport_api.crew",
+    "pk": 3,
+    "fields": {
+      "first_name": "Michael",
+      "last_name": "Brown"
+    }
+  },
+  {
+    "model": "airport_api.crew",
+    "pk": 4,
+    "fields": {
+      "first_name": "Sarah",
+      "last_name": "Davis"
+    }
+  },
+  {
+    "model": "airport_api.order",
+    "pk": 1,
+    "fields": {
+      "created_at": "2025-09-25T12:00:00Z",
+      "user": 1
+    }
+  },
+  {
+    "model": "airport_api.order",
+    "pk": 2,
+    "fields": {
+      "created_at": "2025-09-26T15:30:00Z",
+      "user": 1
+    }
+  },
+  {
+    "model": "airport_api.ticket",
+    "pk": 1,
+    "fields": {
+      "row": 5,
+      "seat": 3,
+      "flight": 1,
+      "order": 1
+    }
+  },
+  {
+    "model": "airport_api.ticket",
+    "pk": 2,
+    "fields": {
+      "row": 5,
+      "seat": 4,
+      "flight": 1,
+      "order": 1
+    }
+  },
+  {
+    "model": "airport_api.ticket",
+    "pk": 3,
+    "fields": {
+      "row": 10,
+      "seat": 2,
+      "flight": 2,
+      "order": 2
+    }
+  },
+  {
+    "model": "airport_api.ticket",
+    "pk": 4,
+    "fields": {
+      "row": 15,
+      "seat": 5,
+      "flight": 3,
+      "order": 2
+    }
+  }
+]
